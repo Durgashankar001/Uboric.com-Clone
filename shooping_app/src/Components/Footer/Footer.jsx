@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <Divider className='wh' />
-      <div className='third'>
+      <div className='third2'>
         <p>© 2019 – 2022 UBORIC. ALL RIGHTS RESERVED.</p>
       </div>
     </div>
