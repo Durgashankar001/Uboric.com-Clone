@@ -7,6 +7,7 @@ import { FcLike } from 'react-icons/fc'
 import './Navbar.css'
 import { useState } from 'react'
 import DrawerComponent from './Drawer/Drawer'
+import Drawer2 from './Drawer/Drawer2'
 
 const links = [
     {
@@ -33,10 +34,13 @@ const links = [
 
 const Navbar = () => {
     const [isOpen,setIsOpen] = useState(false)
+    const [drawerOpen,setDrawerOpen] = useState(false)
     const Drawer = () => {
             setIsOpen(true)
-            console.log("Durga")
     }
+    const DrawerisOpen = () => {
+        setDrawerOpen(true)
+}
     return (
         <>
          
@@ -64,7 +68,8 @@ const Navbar = () => {
                             <div className='icon'>
                                 <BiSearch className='ic' size={25} onClick={Drawer} />
                                 <DrawerComponent isOpen={isOpen} setIsOpen={setIsOpen} className='drawer'/>
-                                <CgProfile className='ic' size={25} />
+                                <CgProfile className='ic' size={25} onClick={DrawerisOpen}/>
+                                <Drawer2 isOpen={drawerOpen} setDrawerOpen={setDrawerOpen}/>
                                 <FcLike className='ic' size={25} />
                                 <BsBag className='ic' size={25} />
                             </div>
