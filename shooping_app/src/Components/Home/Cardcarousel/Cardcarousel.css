@@ -1,0 +1,30 @@
+.pc{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 3rem;
+}
+.pi{
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.product{
+    padding: 0px 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.product:hover{
+    color: red;
+}
+.pre_btn,.next_btn{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.next_btn{
+    right: 0;
+}
