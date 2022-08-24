@@ -9,12 +9,12 @@ const Cardcarousel = ({
 
     let box = document.querySelector(".pi")
     const btnPressPre = () => {
-        // let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft - 1145
+        let width = box.clientWidth;
+        box.scrollLeft = box.scrollLeft - width
     }
     const btnPressNext = () => {
-        // let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft + 1145
+        let width = box.clientWidth;
+        box.scrollLeft = box.scrollLeft + width
     }
 
     return (
