@@ -1,0 +1,262 @@
+.second{
+    margin-top: 20px;
+    padding: 0px 2rem;
+}
+.box{
+    height: 18rem;
+}
+.box img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 1s all;
+}
+.box:hover img{
+    scale: 1.05;
+}
+.third{
+    margin-top: 4rem;
+}
+.sbc_div{
+    margin-top: 2rem;
+    text-align: center;
+}
+.sbc{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 1.7rem;
+    position: relative;
+}
+.sbc::after{
+    content: '';
+    width: 8rem;
+    height: 0.2rem;
+    background: pink;
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+}
+.tc1{
+    width: 100%;
+    margin: auto;
+}
+.tl{
+    margin-top: 1.6rem;
+}
+.four{
+    margin: auto;
+    margin-top: 4rem;
+    width: 90%;
+}
+.f_div{
+    margin: auto;
+    width: 100%;
+    padding: 1.5rem;
+}
+.main{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.main img{
+    transition: 1s all;
+}
+.main:hover img{
+    scale: 1.05;
+}
+.main:hover .para{
+    letter-spacing: 3px;
+}
+.c_div{
+    width: 70%;
+    left: 15%;
+    bottom: -15%;
+    background: white;
+    position: absolute;
+    padding: 1rem 0.8rem;
+    cursor: pointer;
+}
+.head{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.para{
+    transition: 1s all;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    display:block;
+    cursor: pointer;
+}
+.iv_i{
+    display: inline-block;
+    padding-top: 0.8rem;
+    cursor: pointer;
+}
+.five{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.five_main{
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.icon_hide{
+    position: absolute;
+    opacity: 0;
+    right: 10%;
+    top: 8%;
+    transition: 1s ease;
+}
+.icon_hide .ic{
+    margin-bottom: 1rem;
+}
+.eye{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -7px;
+}
+.icon_hide .ic:hover{
+    scale: 1.2;
+}
+.hide_btn{
+    position: absolute;
+    bottom: 0%;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    opacity: 0;
+    transition: 1s ease;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.main_content:hover .hide_btn{
+    opacity: 1;
+} 
+.main_content:hover .icon_hide{
+    opacity: 1;
+}
+.main_content{
+    position: relative;
+    max-height: 400px;
+    cursor: pointer;
+}
+.image{
+    height: 400px;
+    max-height: 80%;
+}
+.image img{
+    object-fit: cover;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+    min-width: 100%;
+}
+.image1{
+    height: 190px;
+}
+.image1 img{
+    object-fit: cover;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+    min-width: 100%;
+}
+.image .img2{
+    display: none;
+}
+.main_content:hover .image .img1{
+    display: none;
+} 
+.main_content:hover .image .img2{
+    display: block;
+} 
+.sale{
+    position: absolute;
+    background: black;
+    color: white;
+    top: 3%;
+    left: 0;
+    padding: 0px 8px;
+    font-size: 0.8rem;
+}
+.text{
+    margin-top: 1rem;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+.text span{
+    color: red;
+}
+.six{
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+}
+.six .text{
+    font-size: 0.9rem;
+    text-align: center;
+    color: black;
+    margin-top: 0.8rem;
+    height: 20%;
+}
+.six .text p{
+    margin-bottom: 0.5rem;
+}
+.six .five_main{
+    margin-top: 4.5rem;
+}
+.hr{
+    width: 50%;
+    margin: auto;
+    height: 0.2rem;
+    background-color: tomato;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+.letter_space{
+    letter-spacing: 0px;
+}
+.mid_text{
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: justify;
+    color: grey;
+    line-height: 1.8rem;
+}
+.f_last{
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.list{
+    font-size: 1rem;
+    color: grey;
+    margin-top: 2rem;
+}
+.last_btn{
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
