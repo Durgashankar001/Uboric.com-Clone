@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <div className='image_banner'>
         <img src="https://i1.wp.com/demo4.drfuri.com/razzi/wp-content/uploads/sites/14/2020/12/about-us-banner.jpg" alt="logo" />
-        <div className='text'>
+        <div className='text2'>
           <h1>We believe we can</h1>
           <h1>all make a stylish.</h1>
         </div>
