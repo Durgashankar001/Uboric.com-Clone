@@ -1,7 +1,7 @@
 .main_box{
     width: 100%;
     background: #1f1f1f;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 .first_div{
     padding-top: 1.2rem;
@@ -60,10 +60,10 @@
     font-size: 1rem;
     color: white;
 }
-.third{
+.third2{
     margin-top: 1rem;
 }
-.third p{
+.third2 p{
     color: white;
     font-size: 0.9rem;
     margin-left: 5rem;

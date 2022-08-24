@@ -78,7 +78,6 @@ const About = () => {
           </Box>
         </SimpleGrid>
       </div>
-      <Footer/>
     </div>
   )
 }

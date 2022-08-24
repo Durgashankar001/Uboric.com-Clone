@@ -412,7 +412,6 @@ const Home = () => {
           </Box>
         </SimpleGrid>
       </div>
-      <Footer/>
     </>
 
   )
