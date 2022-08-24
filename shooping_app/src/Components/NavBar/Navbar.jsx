@@ -5,6 +5,8 @@ import { CgProfile } from 'react-icons/cg'
 import { BsBag } from 'react-icons/bs'
 import { FcLike } from 'react-icons/fc'
 import './Navbar.css'
+import { useState } from 'react'
+import DrawerComponent from './Drawer/Drawer'
 
 const links = [
     {
@@ -30,8 +32,14 @@ const links = [
 ]
 
 const Navbar = () => {
+    const [isOpen,setIsOpen] = useState(false)
+    const Drawer = () => {
+            setIsOpen(true)
+            console.log("Durga")
+    }
     return (
         <>
+         
             <div className='f_bar'>
                 <p className='f_text'>FOR ONLINE PAYMENT EXTRA ₹10% DISCOUNT ON ORDERS ABOVE ₹500</p>
             </div>
@@ -54,12 +62,15 @@ const Navbar = () => {
                         </div>
                         <div className="right">
                             <div className='icon'>
-                                <BiSearch className='ic' size={25} />
+                                <BiSearch className='ic' size={25} onClick={Drawer} />
+                                <DrawerComponent isOpen={isOpen} setIsOpen={setIsOpen} className='drawer'/>
                                 <CgProfile className='ic' size={25} />
                                 <FcLike className='ic' size={25} />
                                 <BsBag className='ic' size={25} />
                             </div>
+                           
                         </div>
+                        
                     </div>
                 </div>
             </div>
