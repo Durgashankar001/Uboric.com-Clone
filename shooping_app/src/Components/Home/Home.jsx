@@ -24,6 +24,7 @@ import {
   ButtonGroup
 } from '@chakra-ui/react'
 import Cardcarousel from './Cardcarousel/Cardcarousel'
+import Footer from '../Footer/Footer'
 
 const Electronics = [
   "Speakers",
@@ -353,7 +354,7 @@ const Home = () => {
               </div>
               <div className='last_btn'>
                 <Button colorScheme='blue' size='sm'>
-                 shop Now
+                  shop Now
                 </Button>
               </div>
             </Box>
@@ -363,6 +364,55 @@ const Home = () => {
           </SimpleGrid>
         </div>
       </div>
+      <div className='seven'>
+        <SimpleGrid columns={[2, 3, 4]} spacing='1.1rem'>
+          <Box>
+            <div className='flex'>
+              <div>
+                <img src="https://demo4.drfuri.com/media/razzi/truck3.svg" alt="" />
+              </div>
+              <div>
+                <p>FREE SHIPPING</p>
+                <p>From all orders over Rs 500</p>
+              </div>
+            </div>
+          </Box>
+          <Box>
+            <div className='flex'>
+              <div>
+                <img src="https://demo4.drfuri.com/media/razzi/money.svg" alt="" />
+              </div>
+              <div>
+                <p>FREE RETURNS</p>
+                <p>Return money within 30 days</p>
+              </div>
+            </div>
+          </Box>
+          <Box>
+            <div className='flex'>
+              <div>
+                <img src="https://demo4.drfuri.com/media/razzi/box.svg" alt="" />
+              </div>
+              <div>
+                <p>SECURE SHOPPING</p>
+                <p>You're in safe hands</p>
+              </div>
+            </div>
+          </Box>
+          <Box>
+            <div className='flex'>
+              <div>
+                <img src="https://demo4.drfuri.com/media/razzi/like.svg" alt="" />
+              </div>
+              <div>
+                <p>OVER 10,000 STYLES</p>
+                <p>We have everything you need</p>
+              </div>
+            </div>
+          </Box>
+        </SimpleGrid>
+      </div>
+      <Footer/>
     </>
 
   )
