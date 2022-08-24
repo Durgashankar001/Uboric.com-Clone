@@ -1,0 +1,70 @@
+.main_box{
+    width: 100%;
+    background: #1f1f1f;
+    padding-bottom: 1.5rem;
+}
+.first_div{
+    padding-top: 1.2rem;
+}
+.heading{
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.input{
+    width: 45rem;
+    margin: auto;
+}
+.input input{
+    height: 3.5rem;
+    width: 30rem;
+    padding-left: 1rem;
+    background-color: 
+    #303030;
+    color: white;
+    outline: none;
+}
+.input button{
+    width: 10rem;
+    height: 3.5rem;
+    background: white;
+    background-color: #525252;
+    margin-left: 0.8rem;
+    color: white;
+}
+.wh{
+    margin-top: 2rem;
+}
+.second_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+}
+.img_box{
+    width: 21%;
+}
+.img_box img{
+    width: 18rem;
+    margin-top: 3rem;
+}
+.list_box{
+    width: 75%;
+    color: grey;
+    font-size: 0.9rem;
+
+}
+.list_box h2{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+.third{
+    margin-top: 1rem;
+}
+.third p{
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 5rem;
+}

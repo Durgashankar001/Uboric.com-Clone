@@ -259,4 +259,28 @@
     margin-top: 4rem;
     cursor: pointer;
 }
-
+.six .main_content{
+    margin-bottom: 5rem;
+}
+.seven{
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.flex p:last-child{
+    font-size: 0.8rem;
+}
