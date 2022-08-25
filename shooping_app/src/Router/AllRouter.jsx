@@ -7,6 +7,7 @@ import Checkout from '../Components/CheckOut/Checkout'
 import Contactus from '../Components/Contactus/Contactus'
 import Home from '../Components/Home/Home'
 import Shop from '../Components/Shop/Shop'
+import SingleItem from '../Components/SingleItem/SingleItem'
 
 const AllRouter = () => {
   return (
@@ -18,6 +19,7 @@ const AllRouter = () => {
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/aboutus" element={<About/>}/>
         <Route path="/category" element={<Category/>}/>
+        <Route path="/productlist" element={<SingleItem/>}/>
     </Routes>
   )
 }
