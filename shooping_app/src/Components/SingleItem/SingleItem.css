@@ -1,0 +1,101 @@
+.single_flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.single_flex_1{
+    width: 50%;
+    padding-top: 3rem;
+}
+.single_img{
+    width: 50%;
+    margin: auto;
+}
+.single_img img{
+    width: 100%;
+}
+.single_text{
+    padding: 5rem;
+    margin-top: 5rem;
+}
+.single_text h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.single_text p{
+    text-align: left;
+    line-height: 2rem;
+}
+.single_flex_2{
+    width: 50%;
+    padding-top: 3rem;
+}
+.single_flex_2 div{
+    width: 100%;
+    padding: 0rem 3rem;
+}
+.single_header p{
+margin-bottom: 1rem;
+font-weight: 600;
+}
+.single_header h1{
+    margin-bottom: 1.2rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.single_price{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: tomato;
+}
+.single_size p{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+.single_size select{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    height: 3rem;
+    padding: 0rem 2rem;
+    font-size: 0.9rem;
+}
+.single_size{
+    margin: 2rem 0rem 2rem 0rem;
+}
+.single_des{
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    display: flex;
+}
+.single_des img{
+    width: 50px;
+    margin-left: 1rem;
+}
+.single_btn{
+    margin-top: 3rem;
+}
+.single_btn button{
+    border-radius: 5px;
+    background: rgb(128, 127, 127);
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 1.1rem 2.5rem;
+    margin-right: 2rem;
+}
+.mar{
+    margin-top: 1rem;
+}
+.single_last_text{
+    margin-top: 3rem;
+}
+.single_last_text p{
+    margin-bottom: 1rem;
+}
+.single_popular{
+    margin-bottom: 10rem;
+}
