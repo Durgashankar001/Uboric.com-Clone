@@ -1,12 +1,15 @@
 import { Box } from '@chakra-ui/react'
 import { Link, Navigate } from 'react-router-dom'
-import React from 'react'
+import React, { useContext } from 'react'
 import { AiOutlineEye } from 'react-icons/ai'
 import { BsBag } from 'react-icons/bs'
 import { FcLike } from 'react-icons/fc'
 import './singleProduct.css'
+import { AuthContext } from '../../Context/AuthContext'
 
 const SingleProduct = ({image,title,price,brand,product,handleCartData,id}) => {
+
+  const {isAuth,cartData,setCartData} = useContext(AuthContext)
   const handleChange = () => {
     return <Navigate to='/shop/productlist'/>
   }
