@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Navigate, NavLink, useNavigate } from 'react-router-dom'
 import { BiSearch } from 'react-icons/bi'
 import { CgProfile } from 'react-icons/cg'
 import { BsBag } from 'react-icons/bs'
@@ -8,6 +8,8 @@ import './Navbar.css'
 import { useState } from 'react'
 import DrawerComponent from './Drawer/Drawer'
 import Drawer2 from './Drawer/Drawer2'
+import { AuthContext } from '../../Context/AuthContext'
+import { useToast } from '@chakra-ui/react'
 
 const links = [
     {
@@ -33,6 +35,9 @@ const links = [
 ]
 
 const Navbar = () => {
+    const toast = useToast()
+    const navigate = useNavigate()
+    const { isAuth, user, toggleAuth, saveUser } = useContext(AuthContext)
     const [isOpen,setIsOpen] = useState(false)
     const [drawerOpen,setDrawerOpen] = useState(false)
     const Drawer = () => {
@@ -40,6 +45,21 @@ const Navbar = () => {
     }
     const DrawerisOpen = () => {
         setDrawerOpen(true)
+}
+
+const goCart = () => {
+    if(!isAuth){
+        toast({
+            position: 'top',
+            title: 'Please Login First',
+            status: 'error',
+            duration: 9000,
+            isClosable: true,
+          })
+    }
+    else{
+       navigate("/cart")
+    }
 }
     return (
         <>
@@ -71,7 +91,7 @@ const Navbar = () => {
                                 <CgProfile className='ic' size={25} onClick={DrawerisOpen}/>
                                 <Drawer2 isOpen={drawerOpen} setDrawerOpen={setDrawerOpen}/>
                                 <FcLike className='ic' size={25} />
-                                <BsBag className='ic' size={25} />
+                                <BsBag className='ic' size={25} onClick={goCart} />
                             </div>
                            
                         </div>
