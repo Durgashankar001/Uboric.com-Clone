@@ -7,12 +7,14 @@ const Cardcarousel = ({
     products
 }) => {
 
-    let box = document.querySelector(".pi")
+    
     const btnPressPre = () => {
+        let box = document.querySelector(".pi")
         let width = box.clientWidth;
         box.scrollLeft = box.scrollLeft - width
     }
     const btnPressNext = () => {
+        let box = document.querySelector(".pi")
         let width = box.clientWidth;
         box.scrollLeft = box.scrollLeft + width
     }

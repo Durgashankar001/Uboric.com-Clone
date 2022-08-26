@@ -19,7 +19,7 @@ const AllRouter = () => {
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/aboutus" element={<About/>}/>
         <Route path="/category" element={<Category/>}/>
-        <Route path="/productlist" element={<SingleItem/>}/>
+        <Route path="/shop/productlist/:id" element={<SingleItem/>}/>
     </Routes>
   )
 }

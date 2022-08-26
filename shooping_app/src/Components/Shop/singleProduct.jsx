@@ -1,14 +1,19 @@
 import { Box } from '@chakra-ui/react'
+import { Link, Navigate } from 'react-router-dom'
 import React from 'react'
 import { AiOutlineEye } from 'react-icons/ai'
 import { BsBag } from 'react-icons/bs'
 import { FcLike } from 'react-icons/fc'
 import './singleProduct.css'
 
-const SingleProduct = ({image,title,price,brand,product,handleCartData}) => {
+const SingleProduct = ({image,title,price,brand,product,handleCartData,id}) => {
+  const handleChange = () => {
+    return <Navigate to='/shop/productlist'/>
+  }
   return (
     <Box>
-    <div className='main_content2' style={{ maxHeight: "22rem" }}>
+      <Link to={`/shop/productlist/${id}`}>
+    <div onClick={handleChange} className='main_content2' style={{ maxHeight: "22rem" }}>
       <div className='hide_btn'><AiOutlineEye className='eye' size={25} />Show More</div>
       <div className='sale'>SALE</div>
       <div className='icon_hide'>
@@ -24,6 +29,7 @@ const SingleProduct = ({image,title,price,brand,product,handleCartData}) => {
 
       </div>
     </div>
+    </Link>
   </Box>
   )
 }
