@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
+    margin-bottom: 3rem;
 }
 .single_flex_1{
     width: 50%;
@@ -14,6 +15,7 @@
 }
 .single_img img{
     width: 100%;
+    min-height: 23rem;
 }
 .single_text{
     padding: 5rem;
@@ -97,5 +99,5 @@ font-weight: 600;
     margin-bottom: 1rem;
 }
 .single_popular{
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
 }

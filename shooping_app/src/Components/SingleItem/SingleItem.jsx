@@ -25,10 +25,12 @@ import {
     Button,
     ButtonGroup
   } from '@chakra-ui/react'
+import { useParams } from 'react-router-dom'
 
 const SingleItem = () => {
     const [data,setData] = useState({})
-    const [id,setId] = useState(1)
+    const parms = useParams();
+    const [id,setId] = useState(parms.id)
 
     useEffect(()=> {
         getDataById(id)
@@ -59,9 +61,9 @@ const SingleItem = () => {
             </div>
             <div className='single_flex_2'>
                 <div className='single_header'>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <h1>Hello World</h1>
-                    <p className='single_price'>Price : 2799.00</p>
+                    <p>{data.category}</p>
+                    <h1>{data.title}</h1>
+                    <p className='single_price'>Price : ₹{data.price}</p>
                 </div>
                 <div className='single_size'>
                     <p>SIZE</p>
