@@ -39,6 +39,7 @@ const Drawer2 = ({ isOpen, setDrawerOpen }) => {
   const [data, setData] = useState(intialFormData)
   const [formData, setFormData] = useState([])
   const [data2, setData2] = useState(intialFormData2)
+  const [signup,setSignup] = useState(false)
 
   const { isAuth, user, toggleAuth, saveUser } = useContext(AuthContext)
   useEffect(() => {
@@ -46,7 +47,7 @@ const Drawer2 = ({ isOpen, setDrawerOpen }) => {
   }, [])
   useEffect(() => {
     arr2 = JSON.parse(localStorage.getItem("user"))
-  }, [])
+  }, [signup])
 
   const handleChange = (e) => {
     const { name: key, value } = e.target
@@ -82,6 +83,7 @@ const Drawer2 = ({ isOpen, setDrawerOpen }) => {
           duration: 9000,
           isClosable: true,
         })
+        setSignup(true)
       }
       else {
         toast({

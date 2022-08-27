@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 const AuthContext = React.createContext()
 
 const AuthContextContainer=({children}) =>{
-    const [isAuth,setIsAuth] = useState(false)
+    const [isAuth,setIsAuth] = useState(true)
     const [user,setUser] = useState("")
     const [cartData,setCartData] = useState([])
     const toggleAuth = () =>{
