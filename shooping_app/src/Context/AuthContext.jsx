@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 const AuthContext = React.createContext()
 
 const AuthContextContainer=({children}) =>{
-    const [isAuth,setIsAuth] = useState(true)
+    const [isAuth,setIsAuth] = useState(false)
     const [user,setUser] = useState("")
     const [cartData,setCartData] = useState([])
+    const [alltotal,setAlltotal] = useState(0)
     const toggleAuth = () =>{
         setIsAuth(true)
     }
@@ -18,7 +19,7 @@ const AuthContextContainer=({children}) =>{
         
     }
     return (
-        <AuthContext.Provider value={{isAuth,user,toggleAuth,saveUser,cartData,setCartData}}>
+        <AuthContext.Provider value={{isAuth,user,toggleAuth,saveUser,cartData,setCartData,alltotal,setAlltotal}}>
             {children}
         </AuthContext.Provider>
     )

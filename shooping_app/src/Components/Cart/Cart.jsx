@@ -7,7 +7,7 @@ import { useToast } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
-  const {cartData,setCartData} = useContext(AuthContext)
+  const {cartData,setCartData,setAlltotal} = useContext(AuthContext)
   const toast = useToast()
   const [data,setData] = useState([])
   const [total,setTotal] = useState(0)
@@ -20,6 +20,7 @@ const Cart = () => {
           sum+=Number(cartData[i].price)
       }
       setTotal(sum)
+      setAlltotal(sum)
   },[cartData.length])
 
   useEffect(()=>{
@@ -64,11 +65,13 @@ const Cart = () => {
         sum2 += data[i].quantity * data[i].price;
       //   sum4 += data[i].quantity;
       }
-      setTotal(sum2);
+      setTotal(sum2)
+      setAlltotal(sum2);
     };
 const coApply = () => {
   if(co=="masai30"){
     setTotal(total*0.30)
+    setAlltotal(total*0.30)
     toast({
       position: 'top',
       title: 'Code applied Successfully',
@@ -89,6 +92,9 @@ const coApply = () => {
 
 const goShop = () => {
   navigate("/shop")
+}
+const goCheckout = () => {
+  navigate("/checkout")
 }
 
   console.log(cartData)
@@ -133,7 +139,7 @@ const goShop = () => {
             </div>
           </div>
           <div className='checkout_btn'>
-            <button>Procceed to Checkout</button>
+            <button onClick={goCheckout}>Procceed to Checkout</button>
           </div> 
           <p className='shooping_cart' onClick={goShop}>Continue Shooping</p> 
         </div>

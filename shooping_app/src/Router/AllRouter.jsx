@@ -25,6 +25,7 @@ const AllRouter = () => {
         <Route path="/aboutus" element={<About/>}/>
         <Route path="/category" element={<Category/>}/>
         <Route path="/shop/productlist/:id" element={<SingleItem/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
     </Routes>
   )
 }

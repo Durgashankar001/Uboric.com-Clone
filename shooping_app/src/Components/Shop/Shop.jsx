@@ -7,15 +7,16 @@ import './Shop.css'
 const Shop = () => {
   // const {cartData,setCartData} = useContext(AuthContext)
   const [data, setData] = useState([])
+  const [sort,setSort] = useState("")
   useEffect(() => {
-    getData()
+    getData({sort})
       .then(res => {
         setData(res)
       })
       .catch((err) => {
         console.log(err)
       })
-  }, [])
+  }, [sort])
   // const handleCartData =(product) =>{
   //     if(checkCartData(cartData,product)==false){
   //         setCartData([...cartData,product]) 
@@ -75,10 +76,10 @@ const Shop = () => {
         <div className='shop_item'>
           <div className='shop_heading'>
             <h1 className='shop_main_heading'>Shop</h1>
-            <select name="" className='shop_select'>
-              <option value="ASC">Default</option>
-              <option value="ASC">short by price:low to high</option>
-              <option value="DESC">short by price:high to low</option>
+            <select name="" className='shop_select' onChange={(e)=>setSort(e.target.value)}>
+              <option value="asc">Default</option>
+              <option value="asc">short by price:low to high</option>
+              <option value="desc">short by price:high to low</option>
             </select>
           </div>
           <div className='shop_all_item'>

@@ -1,0 +1,81 @@
+.input_form {
+    width: 60%;
+}
+
+.input_form input,
+.input_form select {
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.input_form label {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.input_form textarea {
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.input_form h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.input_form .input_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_form .input_flex div{
+    width: 45%;
+}
+.input_form .input_flex input{
+    width: 100%;
+}
+.payment_head{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+.payment_head2{
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.bil_methode{
+    width: 35%;
+}
+.radio{
+    border: 1px solid grey;
+    width: 100%;
+}
+.radio div{
+    border-bottom: 1px solid grey;
+
+}
+.radio h1{
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.gr{
+    margin-left: 1rem;
+    margin: 1.5rem 1rem;
+    display: flex;
+}
+.my_cart{
+    width: 100%;
+    margin-top: 3rem;
+}
