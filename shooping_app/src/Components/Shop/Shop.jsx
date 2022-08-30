@@ -83,7 +83,7 @@ const Shop = () => {
             </select>
           </div>
           <div className='shop_all_item'>
-            <SimpleGrid columns={[1, 2, 3]} spacing='3rem'>
+            <SimpleGrid columns={[2, 2, 3]} spacing='3rem'>
             {data?.map((el)=><SingleProduct key={el.id} id={el.id} title={el.title} image={el.image} price={el.price} brand ={el.brand} product={el}/>)}
             </SimpleGrid>
           </div>

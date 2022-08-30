@@ -71,4 +71,35 @@
 
 .ic {
     cursor: pointer;
+
+}
+
+.menu_side{
+    cursor: pointer;
+}
+.menu_left{
+    display: none;
+}
+@media all and (max-width: 800px){
+    .menu_left{
+        display: block;
+        width: 30px;
+    }
+    .nav{
+        padding: 0 1.5rem;
+    }
+    .mid{
+        display: none;
+    }
+    .ic{
+        width: 18px;
+        margin-left: 5px;
+    }
+    .logoImg {
+        width: 100px;
+    }
+    .right {
+        width: 30%;
+    }
+    
 }
