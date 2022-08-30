@@ -152,6 +152,7 @@
     position: relative;
     max-height: 400px;
     cursor: pointer;
+    margin-top: 2rem;
 }
 .image{
     height: 400px;

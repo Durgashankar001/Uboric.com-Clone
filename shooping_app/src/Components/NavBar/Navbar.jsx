@@ -4,12 +4,14 @@ import { BiSearch } from 'react-icons/bi'
 import { CgProfile } from 'react-icons/cg'
 import { BsBag } from 'react-icons/bs'
 import { FcLike } from 'react-icons/fc'
+import { MdMenu } from 'react-icons/md'
 import './Navbar.css'
 import { useState } from 'react'
 import DrawerComponent from './Drawer/Drawer'
 import Drawer2 from './Drawer/Drawer2'
 import { AuthContext } from '../../Context/AuthContext'
 import { useToast } from '@chakra-ui/react'
+import DrawerMenuComponent from './Drawer/Drawer3'
 
 const links = [
     {
@@ -40,8 +42,12 @@ const Navbar = () => {
     const { isAuth, user, toggleAuth, saveUser } = useContext(AuthContext)
     const [isOpen,setIsOpen] = useState(false)
     const [drawerOpen,setDrawerOpen] = useState(false)
+    const [menu,setMenu] = useState(false)
     const Drawer = () => {
             setIsOpen(true)
+    }
+    const DrawerMenu = () => {
+            setMenu(true)
     }
     const DrawerisOpen = () => {
         setDrawerOpen(true)
@@ -70,6 +76,12 @@ const goCart = () => {
             <div className="sticky">
                 <div>
                     <div className='nav'>
+                    <div className="left menu_left">
+                            <div className='logoImg'>
+                                <MdMenu className='menu_side' size={30} onClick={DrawerMenu}/>
+                                <DrawerMenuComponent isOpen={menu} setMenu={setMenu}/>
+                            </div>
+                        </div>
                         <div className="left">
                             <div className='logoImg'>
                                 <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/200x80black.png" alt="logo" />

@@ -68,3 +68,15 @@
     font-size: 0.9rem;
     margin-left: 5rem;
 }
+@media all and (max-width:800px)
+{
+    .first_div{
+        display: none;
+    }
+    .img_box{
+        display: none;
+    }
+    .third2 p{
+        font-size: 0.8rem;
+    }
+}
