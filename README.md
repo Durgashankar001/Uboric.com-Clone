@@ -1,4 +1,4 @@
-# Uboric.com Clone
+# Cloning Of Uboric.com 
 
 Uboric.com is a Ecommerce Website.
 
