@@ -8,9 +8,13 @@ Online shopping with Uboric is quick, convenient and trouble-free. You can shop 
 
 ## Getting Started
 
-### Dependencies
+### Tech Stack
 
-* React , npm 
+* React
+* Chakra UI
+* CSS
+* HTML
+* Local Sorage
 
 ### Table Of Content
 * Home Page
