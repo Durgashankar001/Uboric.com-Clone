@@ -12,6 +12,7 @@ import Drawer2 from './Drawer/Drawer2'
 import { AuthContext } from '../../Context/AuthContext'
 import { useToast } from '@chakra-ui/react'
 import DrawerMenuComponent from './Drawer/Drawer3'
+import  logo  from "../../assetes/uboric.logo.png"
 
 const links = [
     {
@@ -40,51 +41,51 @@ const Navbar = () => {
     const toast = useToast()
     const navigate = useNavigate()
     const { isAuth, user, toggleAuth, saveUser } = useContext(AuthContext)
-    const [isOpen,setIsOpen] = useState(false)
-    const [drawerOpen,setDrawerOpen] = useState(false)
-    const [menu,setMenu] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+    const [drawerOpen, setDrawerOpen] = useState(false)
+    const [menu, setMenu] = useState(false)
     const Drawer = () => {
-            setIsOpen(true)
+        setIsOpen(true)
     }
     const DrawerMenu = () => {
-            setMenu(true)
+        setMenu(true)
     }
     const DrawerisOpen = () => {
         setDrawerOpen(true)
-}
+    }
 
-const goCart = () => {
-    if(!isAuth){
-        toast({
-            position: 'top',
-            title: 'Please Login First',
-            status: 'error',
-            duration: 9000,
-            isClosable: true,
-          })
+    const goCart = () => {
+        if (!isAuth) {
+            toast({
+                position: 'top',
+                title: 'Please Login First',
+                status: 'error',
+                duration: 9000,
+                isClosable: true,
+            })
+        }
+        else {
+            navigate("/cart")
+        }
     }
-    else{
-       navigate("/cart")
-    }
-}
     return (
         <>
-         
+
             <div className='f_bar'>
                 <p className='f_text'>FOR ONLINE PAYMENT EXTRA ₹10% DISCOUNT ON ORDERS ABOVE ₹500</p>
             </div>
             <div className="sticky">
                 <div>
                     <div className='nav'>
-                    <div className="left menu_left">
+                        <div className="left menu_left">
                             <div className='logoImg'>
-                                <MdMenu className='menu_side' size={30} onClick={DrawerMenu}/>
-                                <DrawerMenuComponent isOpen={menu} setMenu={setMenu}/>
+                                <MdMenu className='menu_side' size={30} onClick={DrawerMenu} />
+                                <DrawerMenuComponent isOpen={menu} setMenu={setMenu} />
                             </div>
                         </div>
                         <div className="left">
                             <div className='logoImg'>
-                                <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/200x80black.png" alt="logo" />
+                                <img src={logo} alt="logo" />
                             </div>
                         </div>
                         <div className="mid">
@@ -99,15 +100,15 @@ const goCart = () => {
                         <div className="right">
                             <div className='icon'>
                                 <BiSearch className='ic' size={25} onClick={Drawer} />
-                                <DrawerComponent isOpen={isOpen} setIsOpen={setIsOpen} className='drawer'/>
-                                <CgProfile className='ic' size={25} onClick={DrawerisOpen}/>
-                                <Drawer2 isOpen={drawerOpen} setDrawerOpen={setDrawerOpen}/>
+                                <DrawerComponent isOpen={isOpen} setIsOpen={setIsOpen} className='drawer' />
+                                <CgProfile className='ic' size={25} onClick={DrawerisOpen} />
+                                <Drawer2 isOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
                                 <FcLike className='ic' size={25} />
                                 <BsBag className='ic' size={25} onClick={goCart} />
                             </div>
-                           
+
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
