@@ -25,6 +25,14 @@ import {
 } from '@chakra-ui/react'
 import Cardcarousel from './Cardcarousel/Cardcarousel'
 import Footer from '../Footer/Footer'
+import img1 from "../../assetes/uboric.seven.jpg"
+import img2 from "../../assetes/uboric.eight.jpg"
+import img3 from "../../assetes/uboric.nine.jpg"
+import img4 from "../../assetes/uboric.ten.jpg"
+import img5 from "../../assetes/uboric.eleven.jpg"
+import img6 from "../../assetes/uboric.twelve.jpg"
+import img7 from "../../assetes/uboric.thirteen.jpg"
+import img8 from "../../assetes/uboric.fourteen.jpg"
 
 const Electronics = [
   "Speakers",
@@ -69,13 +77,13 @@ const Home = () => {
       <div className='second'>
         <SimpleGrid columns={[1, 2, 3]} spacing='1.1rem'>
           <Box className='box'>
-            <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/kithchen-tools.jpg" alt="png" />
+            <img src={img1} alt="png" />
           </Box>
           <Box className='box'>
-            <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/Air-Tight-Containers.jpg" alt="png" />
+            <img src={img2} alt="png" />
           </Box>
           <Box className='box'>
-            <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/Gas-Lighter-1024x1024-1.jpg" alt="png" />
+            <img src={img3} alt="png" />
           </Box>
         </SimpleGrid>
       </div>
@@ -108,28 +116,28 @@ const Home = () => {
         <div className='f_div'>
           <SimpleGrid columns={[1, 1, 2, 2, 2]} spacing='40px'>
             <Box className='main'>
-              <img src="https://www.uboric.com/wp-content/uploads/2022/08/banner2-1.jpg" alt="banner" />
+              <img src={img4} alt="banner" />
               <div className='c_div'>
                 <h1 className='head'>Bathroom Accessories</h1>
                 <p className='para'>Shop Now <BsArrowRight size={25} className='iv_i' /></p>
               </div>
             </Box>
             <Box className='main'>
-              <img src="https://www.uboric.com/wp-content/uploads/2022/08/banner1-1-1.jpg" alt="banner" />
+              <img src={img5} alt="banner" />
               <div className='c_div'>
                 <h1 className='head'>Electric Appliances</h1>
                 <p className='para'>Shop Now <BsArrowRight size={25} className='iv_i' /></p>
               </div>
             </Box>
             <Box className='main'>
-              <img src="https://www.uboric.com/wp-content/uploads/2022/08/banner3-1.jpg" alt="banner" />
+              <img src={img6} alt="banner" />
               <div className='c_div'>
                 <h1 className='head'>Clothing</h1>
                 <p className='para'>Shop Now <BsArrowRight size={25} className='iv_i' /></p>
               </div>
             </Box>
             <Box className='main'>
-              <img src="https://www.uboric.com/wp-content/uploads/2022/08/banner4-1.jpg" alt="banner" />
+              <img src={img7} alt="banner" />
               <div className='c_div'>
                 <h1 className='head'>Paintaing</h1>
                 <p className='para'>Shop Now <BsArrowRight size={25} className='iv_i' /></p>
@@ -359,7 +367,7 @@ const Home = () => {
               </div>
             </Box>
             <Box>
-              <img src="https://www.uboric.com/wp-content/uploads/2022/08/61OR0aPLJAL._SL1500_-670x575.jpg" alt="img" />
+              <img src={img8} alt="img" />
             </Box>
           </SimpleGrid>
         </div>

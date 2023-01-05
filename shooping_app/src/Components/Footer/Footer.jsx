@@ -1,6 +1,7 @@
 import { Box, Divider, ListItem, SimpleGrid, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
 import './Footer.css'
+import logo from "../../assetes/uboric.fifteen.png"
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
 
       <div className='second_div'>
         <div className='img_box'>
-          <img src="https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/uboric.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <div className='list_box'>
           <SimpleGrid columns={[2, 1, 4, 4]} spacing='2rem'>

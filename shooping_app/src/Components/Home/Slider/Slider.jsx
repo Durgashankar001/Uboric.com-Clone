@@ -1,12 +1,14 @@
 import React from "react";
 import "./Slider.css";
 import { BsArrowRight } from 'react-icons/bs'
+import img1 from "../../../assetes/uboric.first.jpg"
+import img2 from "../../../assetes/uboric.second.jpg"
+import img3 from "../../../assetes/uboric.three.jpg"
+import img4 from "../../../assetes/uboric.four.jpg"
+import img5 from "../../../assetes/uboric.five.jpg"
+import img6 from "../../../assetes/uboric.six.jpg"
 const colors = [
-    "https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/electronics.jpg",
-    "https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/clothing-3.jpg",
-    "https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/health-care-4.jpg",
-    "https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/kitchenwear-3.jpg",
-    "https://outstripinfotech.com/wpword/razi/wp-content/uploads/2022/08/grocery-3.jpg"
+    img1, img2, img3, img4, img5, img6
 ];
 const delay = 3000;
 // "#0088FE", "#00C49F", "#FFBB28"
